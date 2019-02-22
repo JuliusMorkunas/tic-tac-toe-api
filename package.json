@@ -1,0 +1,44 @@
+{
+  "name": "tic-tac-toe-api",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "./node_modules/.bin/mocha src/**/*.test.js --reporter spec",
+    "lint": "eslint src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertoachar/docker-express-mongodb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robertoachar/docker-express-mongodb/issues"
+  },
+  "dependencies": {
+    "@robertoachar/express-cors": "1.0.2",
+    "body-parser": "1.18.2",
+    "chai": "4.2.0",
+    "dotenv": "5.0.1",
+    "express": "4.16.3",
+    "express-catch-errors": "0.1.0",
+    "helmet": "3.12.0",
+    "mocha": "6.0.1",
+    "mongoose": "5.0.15",
+    "morgan": "1.9.0",
+    "winston": "2.4.2"
+  },
+  "devDependencies": {
+    "eslint": "4.19.1",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-import": "2.11.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "nodemon": "1.17.3",
+    "prettier": "1.12.1"
+  },
+  "license": "MIT"
+}

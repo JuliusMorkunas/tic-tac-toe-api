@@ -1,0 +1,87 @@
+{
+  "info": {
+    "_postman_id": "69d9657e-bef4-080e-f8c8-1ec9d1c13526",
+    "name": "tic-tac-toe-api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "/healthcheck",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:8000/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "healthcheck"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/actions",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:8000/api/actions",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "actions"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/actions",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw":
+            "{\n \"player\": \"X\",\n \"row\": 0,\n \"cell\": 0\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/actions",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "actions"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/actions",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:8000/api/actions",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "actions"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
