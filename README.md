@@ -23,23 +23,19 @@ $ npm install
 | Action                    | Usage          |
 | ------------------------- | -------------- |
 | Starting development mode | `npm start`    |
+| Running tests             | `npm test`     |
 | Linting code              | `npm run lint` |
 
-## Docker
+* Developing in Docker container
 
-Building an image
 ```shell
-$ docker-compose build
+$ docker-compose --file docker-compose.develop.yml up --build
 ```
 
-Running a container
-```shell
-$ docker-compose up
-```
+## Docker production build
 
-Stopping a container
 ```shell
-$ docker-compose down
+$ docker-compose up --build
 ```
 
 ## Rest API
